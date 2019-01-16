@@ -1,0 +1,10 @@
+{
+  "name": "@addapptables/ngrx-actions",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0",
+    "@ngrx/store": "7.0.0",
+    "rxjs": "6.3.3"
+  }
+}

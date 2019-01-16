@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "@addapptables/ngrx-actions": {
+      "root": "projects/addapptables/ngrx-actions",
+      "sourceRoot": "projects/addapptables/ngrx-actions/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/addapptables/ngrx-actions/tsconfig.lib.json",
+            "project": "projects/addapptables/ngrx-actions/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/addapptables/ngrx-actions/src/test.ts",
+            "tsConfig": "projects/addapptables/ngrx-actions/tsconfig.spec.json",
+            "karmaConfig": "projects/addapptables/ngrx-actions/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/addapptables/ngrx-actions/tsconfig.lib.json",
+              "projects/addapptables/ngrx-actions/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngrx-actions"
+}
