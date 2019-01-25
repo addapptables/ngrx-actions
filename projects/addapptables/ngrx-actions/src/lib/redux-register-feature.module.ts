@@ -3,9 +3,7 @@ import { ReducerManager, combineReducers } from '@ngrx/store';
 import { FEATURE_STORE_TOKEN } from './redux-tokens';
 import { createReducer } from './factory';
 
-@NgModule({
-    providers: [ReducerManager]
-})
+@NgModule()
 export class ReduxRegisterFeatureModule {
     constructor(@Optional() @Inject(FEATURE_STORE_TOKEN) featureReducers: any, reducerFactory: ReducerManager, parentInjector: Injector
     ) {
