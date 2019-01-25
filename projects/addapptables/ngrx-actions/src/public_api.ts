@@ -2,10 +2,12 @@
  * Public API Surface of ngrx-actions
  */
 
-export { Action } from './lib/action';
-export { ofAction } from './lib/of-action';
-export { Store } from './lib/store';
-export { Select, NgrxSelect } from './lib/select';
-export { Effect } from './lib/effect';
-export { createReducer } from './lib/factory';
-export { ReduxRegisterModule } from './lib/redux-register.module';
+export * from './lib/action';
+export * from './lib/of-action';
+export * from './lib/store';
+export * from './lib/select';
+export * from './lib/effect';
+export * from './lib/factory';
+export * from './lib/redux-register-feature.module';
+export * from './lib/redux-register-root.module';
+export * from './lib/redux-register.module';

@@ -5,7 +5,7 @@ import { StoreModule } from '@ngrx/store';
 import { ReduxRegisterFeatureModule } from './redux-register-feature.module';
 
 @NgModule({
-    imports: [StoreModule]
+    imports: [StoreModule.forRoot({})]
 })
 export class ReduxRegisterModule {
     static forRoot(reducers: any): ModuleWithProviders {

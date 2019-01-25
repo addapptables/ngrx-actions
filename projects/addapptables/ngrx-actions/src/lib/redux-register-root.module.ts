@@ -1,14 +1,10 @@
 import { NgModule, Injector, Inject, Optional, InjectFlags } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ReducerManager } from '@ngrx/store';
 import { STORE_TOKEN } from './redux-tokens';
 import { createReducer } from './factory';
 
 @NgModule({
-    imports: [
-        CommonModule
-    ],
-    declarations: []
+    providers: [ReducerManager]
 })
 export class ReduxRegisterRootModule {
     constructor(@Optional() @Inject(STORE_TOKEN) reducers: any, reducerFactory: ReducerManager, parentInjector: Injector) {
