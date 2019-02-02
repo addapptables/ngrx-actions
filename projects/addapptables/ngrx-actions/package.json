@@ -1,6 +1,6 @@
 {
   "name": "@addapptables/ngrx-actions",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "author": "Addapptables",
   "description": "Material ngrx actions library for angular",
   "license": "MIT",
@@ -14,10 +14,10 @@
     "url": "https://github.com/addapptables/ngrx-actions/issues"
   },
   "peerDependencies": {
-    "@angular/common": ">= 7.0.0 < 8.0.0",
-    "@angular/core": ">= 7.0.0 < 8.0.0",
-    "@ngrx/store": ">= 7.0.0 < 8.0.0",
-    "rxjs": ">= 6.0.0 < 7.0.0"
+    "@angular/common": ">=7.0.0 < 8.0.0",
+    "@angular/core": ">=7.0.0 < 8.0.0",
+    "@ngrx/store": ">=7.0.0 < 8.0.0",
+    "rxjs": ">=6.0.0 < 7.0.0"
   },
   "keywords": [
     "angular",
